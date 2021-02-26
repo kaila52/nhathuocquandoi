@@ -1,599 +1,498 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="vi">
+
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="author" content="M_Adnan">
-<title>PAVSHOP - Multipurpose eCommerce HTML5 Template</title>
+    <title>Thanh Toán</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta http-equiv="content-language" content="vi" />
+    <meta name="description" content="Thanh Toán Nhanh">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
-<link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="Thanh Toán">
+    <meta itemprop="description" content="Thanh Toán Nhanh">
+    <meta itemprop="image" content="http://nhathuocquandoi.com/images/favicon.ico">
 
-<!-- Bootstrap Core CSS -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="http://nhathuocquandoi.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Thanh Toán">
+    <meta property="og:description" content="Thanh Toán Nhanh">
+    <meta property="og:image" content="http://nhathuocquandoi.com/images/favicon.ico">
 
-<!-- Custom CSS -->
-<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<link href="css/ionicons.min.css" rel="stylesheet">
-<link href="css/main.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
-<link href="css/responsive.css" rel="stylesheet">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <!-- All css files are included here. -->
+    <!-- Bootstrap fremwork main css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Owl Carousel main css -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- This core.css file contents all plugings css file. -->
+    <link rel="stylesheet" href="css/core.css">
+    <!-- Theme shortcodes/elements style -->
+    <link rel="stylesheet" href="css/shortcode/shortcodes.css">
+    <!-- Theme main style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- User style -->
+    <link rel="stylesheet" href="css/custom.css">
 
-<!-- JavaScripts -->
-<script src="js/modernizr.js"></script>
-
-<!-- Online Fonts -->
-<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900' rel='stylesheet' type='text/css'>
-
-<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
-
+    <!-- Modernizr JS -->
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
+
 <body>
+    <!-- Body main wrapper start -->
+    <div class="wrapper fixed__footer">
 
-<!-- LOADER -->
-<div id="loader">
-  <div class="position-center-center">
-    <div class="ldr"></div>
-  </div>
-</div>
 
-<!-- Wrap -->
-<div id="wrap"> 
-  
-  <!-- header -->
-  <header>
-    <div class="sticky">
-      <div class="container"> 
-        
-        <!-- Logo -->
-        <div class="logo"> <a href="index.html"><img class="img-responsive" src="images/logo.png" alt="" ></a> </div>
-        <nav class="navbar ownmenu">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-open-btn" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"><i class="fa fa-navicon"></i></span> </button>
-          </div>
-          
-           <!-- NAV -->
-          <div class="collapse navbar-collapse" id="nav-open-btn">
-            <ul class="nav">
-              <li class="dropdown active"> <a href="#." class="dropdown-toggle" data-toggle="dropdown">Home</a>
-                <ul class="dropdown-menu">
-                  <li> <a href="index.html">Index Default</a> </li>
-                  <li> <a href="index-1.html">Index 2</a> </li>
-                  <li> <a href="index-2.html">Index 3</a></li>
-                  <li> <a href="index-header-1.html">Index Header 1</a></li>
-                  <li> <a href="index-header-2.html">Index Header 2</a></li>
-                  <li> <a href="index-header-3.html">Index Header 3</a></li>
-                  <li> <a href="index-header-4.html">Index Header 4</a></li>
-                </ul>
-              </li>
-              <li class="dropdown"> <a href="#." class="dropdown-toggle" data-toggle="dropdown">Pages</a>
-                <ul class="dropdown-menu">
-                  <li> <a href="shop_01.html">Shop 01 </a> </li>
-                  <li> <a href="shop_02.html">Shop 02</a> </li>
-                  <li> <a href="shop_03.html">Shop 03 </a> </li>
-                  <li> <a href="shop_04.html">Shop 04 </a> </li>
-                  <li> <a href="product-detail_01.html">Product Detail 01</a> </li>
-                  <li> <a href="product-detail_02.html">Product Detail 02</a> </li>
-                  <li> <a href="shopping-cart.html">Shopping Cart</a> </li>
-                  <li> <a href="checkout.html">Checkout</a> </li>
-                  <li> <a href="about-us_01.html">About 01</a> </li>
-                  <li> <a href="about-us_02.html">About 02</a> </li>
-                  <li> <a href="contact.html">Contact</a> </li>
-                  <li> <a href="blog-list_01.html">Blog List 01</a> </li>
-                  <li> <a href="blog-list_02.html">Blog List 02</a> </li>
-                  <li> <a href="blog-list_03.html">Blog List 03 </a> </li>
-                  <li> <a href="blog-detail_01.html">Blog Detail 01 </a> </li>
-                </ul>
-              </li>
-              <li> <a href="about-us_01.html">About </a> </li>
-              
-              <!-- Two Link Option -->
-              <li class="dropdown"> <a href="#." class="dropdown-toggle" data-toggle="dropdown">Designer</a>
-                <div class="dropdown-menu two-option">
-                  <div class="row">
-                    <ul class="col-sm-6">
-                      <li> <a href="shop_01.html">summer store</a></li>
-                      <li> <a href="shop_01.html"> sarees</a></li>
-                      <li> <a href="shop_01.html"> kurtas</a></li>
-                      <li> <a href="shop_01.html"> shorts & tshirts</a></li>
-                      <li> <a href="shop_01.html"> winter wear</a></li>
-                      <li> <a href="shop_01.html"> jeans</a></li>
-                      <li> <a href="shop_01.html"> bra</a></li>
-                      <li> <a href="shop_01.html"> babydools</a> </li>
-                    </ul>
-                    <ul class="col-sm-6">
-                      <li> <a href="shop_01.html">deodornts</a></li>
-                      <li> <a href="shop_01.html"> skin care</a></li>
-                      <li> <a href="shop_01.html"> make up</a></li>
-                      <li> <a href="shop_01.html"> watch</a></li>
-                      <li> <a href="shop_01.html"> siting bags</a></li>
-                      <li> <a href="shop_01.html"> totes</a></li>
-                      <li> <a href="shop_01.html"> gold rings</a></li>
-                      <li> <a href="shop_01.html"> jewellery</a> </li>
-                    </ul>
-                  </div>
-                </div>
-              </li>
-              
-              <!-- MEGA MENU -->
-              <li class="dropdown megamenu"> <a href="#." class="dropdown-toggle" data-toggle="dropdown">store</a>
-                <div class="dropdown-menu">
-                  <div class="row"> 
-                    
-                    <!-- Shop Pages -->
-                    <div class="col-md-3">
-                      <h6>Shop Pages</h6>
-                      <ul>
-                        <li> <a href="shop_01.html">Shop 01 </a> </li>
-                        <li> <a href="shop_02.html">Shop 02</a> </li>
-                        <li> <a href="shop_03.html">Shop 03 </a> </li>
-                        <li> <a href="shop_04.html">Shop 04 </a> </li>
-                        <li> <a href="product-detail_01.html">Product Detail 01</a> </li>
-                        <li> <a href="product-detail_02.html">Product Detail 02</a> </li>
-                        <li> <a href="shopping-cart.html">Shopping Cart</a> </li>
-                        <li> <a href="checkout.html">Checkout</a> </li>
-                      </ul>
-                    </div>
-                    
-                    <!-- TOp Rate Products -->
-                    <div class="col-md-4">
-                      <h6>TOp Rate Products</h6>
-                      <div class="top-rated">
-                        <ul>
-                          <li>
-                            <div class="media-left">
-                              <div class="cart-img"> <a href="#"> <img class="media-object img-responsive" src="images/cart-img-1.jpg" alt="..."> </a> </div>
-                            </div>
-                            <div class="media-body">
-                              <h6 class="media-heading">WOOD CHAIR</h6>
-                              <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
-                              <span class="price">129.00 USD</span> </div>
-                          </li>
-                          <li>
-                            <div class="media-left">
-                              <div class="cart-img"> <a href="#"> <img class="media-object img-responsive" src="images/cart-img-2.jpg" alt="..."> </a> </div>
-                            </div>
-                            <div class="media-body">
-                              <h6 class="media-heading">STOOL</h6>
-                              <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
-                              <span class="price">129.00 USD</span> </div>
-                          </li>
-                          <li>
-                            <div class="media-left">
-                              <div class="cart-img"> <a href="#"> <img class="media-object img-responsive" src="images/cart-img-3.jpg" alt="..."> </a> </div>
-                            </div>
-                            <div class="media-body">
-                              <h6 class="media-heading">WOOD SPOON</h6>
-                              <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
-                              <span class="price">129.00 USD</span> </div>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    
-                    <!-- New Arrival -->
-                    <div class="col-md-5">
-                      <h5>NEW ARRIVAL 2016 <span>(Best Collection)</span></h5>
-                      <img class="nav-img" src="images/nav-img.png" alt="" >
-                      <p>Lorem ipsum dolor sit amet,<br>
-                        consectetur adipiscing elit. <br>
-                        Donec faucibus maximus<br>
-                        vehicula.</p>
-                      <a href="#." class="btn btn-small btn-round">SHOP NOW</a> </div>
-                  </div>
-                </div>
-              </li>
-              <li> <a href="contact.html"> contact</a> </li>
-            </ul>
-          </div>
-          
-          <!-- Nav Right -->
-          <div class="nav-right">
-            <ul class="navbar-right">
-              
-              <!-- USER INFO -->
-              <li class="dropdown user-acc"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" ><i class="icon-user"></i> </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <h6>HELLO! Jhon Smith</h6>
-                  </li>
-                  <li><a href="#">MY CART</a></li>
-                  <li><a href="#">ACCOUNT INFO</a></li>
-                  <li><a href="#">LOG OUT</a></li>
-                </ul>
-              </li>
-              
-              <!-- USER BASKET -->
-              <li class="dropdown user-basket"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"><i class="icon-basket-loaded"></i> </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <div class="media-left">
-                      <div class="cart-img"> <a href="#"> <img class="media-object img-responsive" src="images/cart-img-1.jpg" alt="..."> </a> </div>
-                    </div>
-                    <div class="media-body">
-                      <h6 class="media-heading">WOOD CHAIR</h6>
-                      <span class="price">129.00 USD</span> <span class="qty">QTY: 01</span> </div>
-                  </li>
-                  <li>
-                    <div class="media-left">
-                      <div class="cart-img"> <a href="#"> <img class="media-object img-responsive" src="images/cart-img-2.jpg" alt="..."> </a> </div>
-                    </div>
-                    <div class="media-body">
-                      <h6 class="media-heading">WOOD STOOL</h6>
-                      <span class="price">129.00 USD</span> <span class="qty">QTY: 01</span> </div>
-                  </li>
-                  <li>
-                    <h5 class="text-center">SUBTOTAL: 258.00 USD</h5>
-                  </li>
-                  <li class="margin-0">
+
+
+
+        <!-- Start Header Style -->
+        <header id="header" class="htc-header header--3 bg__white">
+            <!-- Start Mainmenu Area -->
+            <div id="sticky-header-with-topbar" class="mainmenu__area sticky__header">
+                <div class="container">
                     <div class="row">
-                      <div class="col-xs-6"> <a href="shopping-cart.html" class="btn">VIEW CART</a></div>
-                      <div class="col-xs-6 "> <a href="checkout.html" class="btn">CHECK OUT</a></div>
+                        <div class="col-md-2 col-lg-2 col-sm-3 col-xs-3">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="images/logo/logo.png" style="height:70px" alt="logo" />
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Start MAinmenu Ares -->
+                        <div class="col-md-8 col-lg-8 col-sm-6 col-xs-6">
+                            <nav class="mainmenu__nav hidden-xs hidden-sm">
+                                <ul class="main__menu">
+                                    <li class="drop"><a href="index.html">Trang chủ</a></li>
+                                    <li class="drop"><a href="about.html">Giới Thiệu</a></li>
+                                    <li class="drop"><a href="shop.html">Cửa Hàng</a> </li>
+                                    <li class="drop"><a href="#">Chính Sách</a>
+                                        <ul class="dropdown">
+                                            <li><a href="chinh-sach-bao-mat.html">Chính sách bảo mật</a></li>
+                                            <li><a href="chinh-sach-doi-tra.html">Chính sách đổi trả</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="contact.html">Liên Hệ</a></li>
+                                </ul>
+                            </nav>
+                            <div class="mobile-menu clearfix visible-xs visible-sm">
+                                <nav id="mobile_dropdown">
+                                    <ul>
+                                        <li><a href="index.html">Trang chủ</a></li>
+                                        <li><a href="about.html">Giới Thiệu</a></li>
+                                        <li><a href="shop.html">Cửa Hàng</a>
+                                            <ul class="dropdown">
+                                                <li><a href="#">Bách Hóa</a></li>
+                                                <li><a href="#">Sách</a></li>
+                                                <li><a href="#">Sức Khỏe & Làm Đẹp</a></li>
+                                                <li><a href="#">Thời Trang</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Chính Sách</a>
+                                            <ul class="dropdown">
+                                                <li><a href="chinh-sach-bao-mat.html">Chính sách bảo mật</a></li>
+                                                <li><a href="chinh-sach-doi-tra.html">Chính sách đổi trả</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact.html">Liên Hệ</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <!-- End MAinmenu Ares -->
+                        <div class="col-md-2 col-sm-4 col-xs-3">
+                            <ul class="menu-extra">
+                                <li class="search search__open hidden-xs"><span class="ti-search"></span></li>
+                                <li><a href="login-register.html"><span class="ti-user"></span></a></li>
+                                <li class="cart__menu"><span class="ti-shopping-cart"></span></li>
+                            </ul>
+                        </div>
                     </div>
-                  </li>
-                </ul>
-              </li>
-              
-              <!-- SEARCH BAR -->
-              <li class="dropdown"> <a href="javascript:void(0);" class="search-open"><i class=" icon-magnifier"></i></a>
-                <div class="search-inside animated bounceInUp"> <i class="icon-close search-close"></i>
-                  <div class="search-overlay"></div>
-                  <div class="position-center-center">
-                    <div class="search">
-                      <form>
-                        <input type="search" placeholder="Search Shop">
-                        <button type="submit"><i class="icon-check"></i></button>
-                      </form>
-                    </div>
-                  </div>
+                    <div class="mobile-menu-area"></div>
                 </div>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </div>
-  </header>
-  
-  <!--======= SUB BANNER =========-->
-  <section class="sub-bnr" data-stellar-background-ratio="0.5">
-    <div class="position-center-center">
-      <div class="container">
-        <h4>CHECKOUT</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus maximus vehicula. 
-          Sed feugiat, tellus vel tristique posuere, diam</p>
-        <ol class="breadcrumb">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">SHOP</a></li>
-          <li class="active">CHECKOUT</li>
-        </ol>
-      </div>
-    </div>
-  </section>
-  
-  <!-- Content -->
-  <div id="content"> 
-    
-    <!--======= PAGES INNER =========-->
-    <section class="chart-page padding-top-100 padding-bottom-100">
-      <div class="container"> 
-        
-        <!-- Payments Steps -->
-        <div class="shopping-cart"> 
-          
-          <!-- SHOPPING INFORMATION -->
-          <div class="cart-ship-info">
-            <div class="row"> 
-              
-              <!-- ESTIMATE SHIPPING & TAX -->
-              <div class="col-sm-7">
-                <h6>BILLING DETAILS</h6>
-                <form>
-                  <ul class="row">
-                    
-                    <!-- Name -->
-                    <li class="col-md-6">
-                      <label> *FIRST NAME
-                        <input type="text" name="first-name" value="" placeholder="">
-                      </label>
-                    </li>
-                    <!-- LAST NAME -->
-                    <li class="col-md-6">
-                      <label> *LAST NAME
-                        <input type="text" name="last-name" value="" placeholder="">
-                      </label>
-                    </li>
-                    <li class="col-md-6"> 
-                      <!-- COMPANY NAME -->
-                      <label>COMPANY NAME
-                        <input type="text" name="company" value="" placeholder="">
-                      </label>
-                    </li>
-                    <li class="col-md-6"> 
-                      <!-- ADDRESS -->
-                      <label>*ADDRESS
-                        <input type="text" name="address" value="" placeholder="">
-                      </label>
-                    </li>
-                    <!-- TOWN/CITY -->
-                    <li class="col-md-6">
-                      <label>*TOWN/CITY
-                        <input type="text" name="town" value="" placeholder="">
-                      </label>
-                    </li>
-                    
-                    <!-- COUNTRY -->
-                    <li class="col-md-6">
-                      <label> COUNTRY
-                        <input type="text" name="contry-state" value="" placeholder="">
-                      </label>
-                    </li>
-                    
-                    <!-- EMAIL ADDRESS -->
-                    <li class="col-md-6">
-                      <label> *EMAIL ADDRESS
-                        <input type="text" name="contry-state" value="" placeholder="">
-                      </label>
-                    </li>
-                    <!-- PHONE -->
-                    <li class="col-md-6">
-                      <label> *PHONE
-                        <input type="text" name="postal-code" value="" placeholder="">
-                      </label>
-                    </li>
-                    
-                    <!-- PHONE -->
-                    <li class="col-md-6">
-                      <button type="submit" class="btn">continue</button>
-                    </li>
-                    
-                    <!-- CREATE AN ACCOUNT -->
-                    <li class="col-md-6">
-                      <div class="checkbox margin-0 margin-top-20">
-                        <input id="checkbox1" class="styled" type="checkbox">
-                        <label for="checkbox1"> Ship to a different address </label>
-                      </div>
-                    </li>
-                  </ul>
-                </form>
-                
-                <!-- SHIPPING info -->
-                <h6 class="margin-top-50">SHIPPING info</h6>
-                <form>
-                  <ul class="row">
-                    
-                    <!-- Name -->
-                    <li class="col-md-6">
-                      <label> *FIRST NAME
-                        <input type="text" name="first-name" value="" placeholder="">
-                      </label>
-                    </li>
-                    <!-- LAST NAME -->
-                    <li class="col-md-6">
-                      <label> *LAST NAME
-                        <input type="text" name="last-name" value="" placeholder="">
-                      </label>
-                    </li>
-                    <li class="col-md-6"> 
-                      <!-- COMPANY NAME -->
-                      <label>COMPANY NAME
-                        <input type="text" name="company" value="" placeholder="">
-                      </label>
-                    </li>
-                    <li class="col-md-6"> 
-                      <!-- ADDRESS -->
-                      <label>*ADDRESS
-                        <input type="text" name="address" value="" placeholder="">
-                      </label>
-                    </li>
-                    <!-- TOWN/CITY -->
-                    <li class="col-md-6">
-                      <label>*TOWN/CITY
-                        <input type="text" name="town" value="" placeholder="">
-                      </label>
-                    </li>
-                    
-                    <!-- COUNTRY -->
-                    <li class="col-md-6">
-                      <label> COUNTRY
-                        <input type="text" name="contry-state" value="" placeholder="">
-                      </label>
-                    </li>
-                    
-                    <!-- EMAIL ADDRESS -->
-                    <li class="col-md-6">
-                      <label> *EMAIL ADDRESS
-                        <input type="text" name="contry-state" value="" placeholder="">
-                      </label>
-                    </li>
-                    <!-- PHONE -->
-                    <li class="col-md-6">
-                      <label> *PHONE
-                        <input type="text" name="postal-code" value="" placeholder="">
-                      </label>
-                    </li>
-                    
-                    <!-- PHONE -->
-                    <li class="col-md-6">
-                      <button type="submit" class="btn">SUBMIT</button>
-                    </li>
-                  </ul>
-                </form>
-              </div>
-              
-              <!-- SUB TOTAL -->
-              <div class="col-sm-5">
-                <h6>YOUR ORDER</h6>
-                <div class="order-place">
-                  <div class="order-detail">
-                    <p>WOOD CHAIR <span>$598 </span></p>
-                    <p>STOOL <span>$199 </span></p>
-                    <p>WOOD SPOON <span> $139</span></p>
-                    
-                    <!-- SUB TOTAL -->
-                    <p class="all-total">TOTAL COST <span> $998</span></p>
-                  </div>
-                  <div class="pay-meth">
-                    <ul>
-                      <li>
-                        <div class="radio">
-                          <input type="radio" name="radio1" id="radio1" value="option1" checked>
-                          <label for="radio1"> DIRECT BANK TRANSFER </label>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam erat turpis, pellentesque non leo eget, pulvinar pretium arcu. Mauris porta elit non.</p>
-                      </li>
-                      <li>
-                        <div class="radio">
-                          <input type="radio" name="radio1" id="radio2" value="option2">
-                          <label for="radio2"> CASH ON DELIVERY</label>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="radio">
-                          <input type="radio" name="radio1" id="radio3" value="option3">
-                          <label for="radio3"> CHEQUE PAYMENT </label>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="radio">
-                          <input type="radio" name="radio1" id="radio4" value="option4">
-                          <label for="radio4"> PAYPAL </label>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="checkbox">
-                          <input id="checkbox3-4" class="styled" type="checkbox">
-                          <label for="checkbox3-4"> I’VE READ AND ACCEPT THE <span class="color"> TERMS & CONDITIONS </span> </label>
-                        </div>
-                      </li>
-                    </ul>
-                    <a href="#." class="btn  btn-dark pull-right margin-top-30">PLACE ORDER</a> </div>
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <!-- About -->
-    <section class="small-about padding-top-150 padding-bottom-150">
-      <div class="container"> 
-        
-        <!-- Main Heading -->
-        <div class="heading text-center">
-          <h4>about PAVSHOP</h4>
-          <p>Phasellus lacinia fermentum bibendum. Interdum et malesuada fames ac ante ipsumien lacus, eu posuere odio luctus non. Nulla lacinia,
-            eros vel fermentum consectetur, risus purus tempc, et iaculis odio dolor in ex. </p>
-        </div>
-        
-        <!-- Social Icons -->
-        <ul class="social_icons">
-          <li><a href="#."><i class="icon-social-facebook"></i></a></li>
-          <li><a href="#."><i class="icon-social-twitter"></i></a></li>
-          <li><a href="#."><i class="icon-social-tumblr"></i></a></li>
-          <li><a href="#."><i class="icon-social-youtube"></i></a></li>
-          <li><a href="#."><i class="icon-social-dribbble"></i></a></li>
-        </ul>
-      </div>
-    </section>
-    
-    <!-- News Letter -->
-    <section class="news-letter padding-top-150 padding-bottom-150">
-      <div class="container">
-        <div class="heading light-head text-center margin-bottom-30">
-          <h4>NEWSLETTER</h4>
-          <span>Phasellus lacinia fermentum bibendum. Interdum et malesuada fames ac ante ipsumien lacus, eu posuere odi </span> </div>
-        <form>
-          <input type="email" placeholder="Enter your email address" required>
-          <button type="submit">SEND ME</button>
-        </form>
-      </div>
-    </section>
-  </div>
-  
-  <!--======= FOOTER =========-->
-  <footer>
-    <div class="container"> 
-      
-      <!-- ABOUT Location -->
-      <div class="col-md-3">
-        <div class="about-footer"> <img class="margin-bottom-30" src="images/logo-foot.png" alt="" >
-          <p><i class="icon-pointer"></i> Street No. 12, Newyork 12, <br>
-            MD - 123, USA.</p>
-          <p><i class="icon-call-end"></i> 1.800.123.456789</p>
-          <p><i class="icon-envelope"></i> info@PAVSHOP.com</p>
-        </div>
-      </div>
-      
-      <!-- HELPFUL LINKS -->
-      <div class="col-md-3">
-        <h6>HELPFUL LINKS</h6>
-        <ul class="link">
-          <li><a href="#."> Products</a></li>
-          <li><a href="#."> Find a Store</a></li>
-          <li><a href="#."> Features</a></li>
-          <li><a href="#."> Privacy Policy</a></li>
-          <li><a href="#."> Blog</a></li>
-          <li><a href="#."> Press Kit </a></li>
-        </ul>
-      </div>
-      
-      <!-- SHOP -->
-      <div class="col-md-3">
-        <h6>SHOP</h6>
-        <ul class="link">
-          <li><a href="#."> About Us</a></li>
-          <li><a href="#."> Career</a></li>
-          <li><a href="#."> Shipping Methods</a></li>
-          <li><a href="#."> Contact</a></li>
-          <li><a href="#."> Support</a></li>
-          <li><a href="#."> Retailer</a></li>
-        </ul>
-      </div>
-      
-      <!-- MY ACCOUNT -->
-      <div class="col-md-3">
-        <h6>MY ACCOUNT</h6>
-        <ul class="link">
-          <li><a href="#."> Login</a></li>
-          <li><a href="#."> My Account</a></li>
-          <li><a href="#."> My Cart</a></li>
-          <li><a href="#."> Wishlist</a></li>
-          <li><a href="#."> Checkout</a></li>
-        </ul>
-      </div>
-      
-      <!-- Rights -->
-      
-      <div class="rights">
-        <p>©  2017 PAVSHOP All right reserved. </p>
-        <div class="scroll"> <a href="#wrap" class="go-up"><i class="lnr lnr-arrow-up"></i></a> </div>
-      </div>
-    </div>
-  </footer>
-  
-  <!--======= RIGHTS =========--> 
-  
-</div>
-<script src="js/jquery-1.11.3.min.js"></script> 
-<script src="js/bootstrap.min.js"></script> 
-<script src="js/own-menu.js"></script> 
-<script src="js/jquery.lighter.js"></script> 
-<script src="js/owl.carousel.min.js"></script> 
+            <!-- End Mainmenu Area -->
+        </header>
+        <!-- End Header Style -->
+        <div class="body__overlay"></div>
+        <!-- Start Offset Wrapper -->
+        <div class="offset__wrapper">
+            <!-- Start Search Popap -->
+            <div class="search__area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="search__inner">
+                                <form action="#" method="get">
+                                    <input placeholder="Tìm kiếm... " type="text">
+                                    <button type="submit"></button>
+                                </form>
+                                <div class="search__close__btn">
+                                    <span class="search__close__btn_icon"><i class="zmdi zmdi-close"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Search Popap -->
 
-<!-- SLIDER REVOLUTION 4.x SCRIPTS  --> 
-<script type="text/javascript" src="rs-plugin/js/jquery.tp.t.min.js"></script> 
-<script type="text/javascript" src="rs-plugin/js/jquery.tp.min.js"></script> 
-<script src="js/main.js"></script> 
-<script src="js/main.js"></script>
+            <!-- Start Cart Panel -->
+            <div class="shopping__cart">
+                <div class="shopping__cart__inner">
+                    <div class="offsetmenu__close__btn">
+                        <a href="#"><i class="zmdi zmdi-close"></i></a>
+                    </div>
+                    <div class="shp__cart__wrap"></div>
+                    <ul class="shopping__btn">
+                        <li><a href="cart.html">Giỏ Hàng</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End Cart Panel -->
+        </div>
+        <!-- End Offset Wrapper -->
+
+
+
+
+
+        <!-- Start Bradcaump area -->
+        <div class="ht__bradcaump__area" style="background: rgba(0, 0, 0, 0) url(images/bg/2.jpg) no-repeat scroll center center / cover ;">
+            <div class="ht__bradcaump__wrap">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="bradcaump__inner text-center">
+                                <h2 class="bradcaump-title">Thông Tin Thanh Toán</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Bradcaump area -->
+        <!-- Start Checkout Area -->
+        <section class="our-checkout-area ptb--120 bg__white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-lg-8">
+                        <div class="ckeckout-left-sidebar">
+                            <!-- Start Checkbox Area -->
+                            <div class="checkout-form">
+                                <h2 class="section-title-3">Thông Tin Nhận Hàng</h2>
+                                <div class="checkout-form-inner">
+                                    <div class="single-checkout-box">
+                                        <input type="text" name="name" placeholder="Họ Và Tên*">
+                                        <input type="text" name="phone" placeholder="Số Điện Thoại*">
+                                    </div>
+                                    <div class="single-checkout-box select-option">
+                                        <select>
+                                            <option>Thành Phố*</option>
+                                            <option>Hà Nội</option>
+                                            <option>Hải Phòng</option>
+                                            <option>Đà Nẵng</option>
+                                            <option>Thành phố Hồ Chí Minh</option>
+                                            <option>Cần Thơ</option>
+                                            <option>An Giang</option>
+                                            <option>Bà Rịa - Vũng Tàu</option>
+                                            <option>Bạc Liêu</option>
+                                            <option>Bắc Giang</option>
+                                            <option>Bắc Kạn</option>
+                                            <option>Bắc Ninh</option>
+                                            <option>Bến Tre</option>
+                                            <option>Bình Dương</option>
+                                            <option>Bình Định</option>
+                                            <option>Bình Phước</option>
+                                            <option>Bình Thuận</option>
+                                            <option>Cà Mau</option>
+                                            <option>Cao Bằng</option>
+                                            <option>Đắk Lắk</option>
+                                            <option>Đắk Nông</option>
+                                            <option>Điện Biên</option>
+                                            <option>Đồng Nai</option>
+                                            <option>Đồng Tháp</option>
+                                            <option>Gia Lai</option>
+                                            <option>Hà Giang</option>
+                                            <option>Hà Nam</option>
+                                            <option>Hà Tĩnh</option>
+                                            <option>Hải Dương</option>
+                                            <option>Hậu Giang</option>
+                                            <option>Hòa Bình</option>
+                                            <option>Hưng Yên</option>
+                                            <option>Khánh Hòa</option>
+                                            <option>Kiên Giang</option>
+                                            <option>Kon Tum</option>
+                                            <option>Lai Châu</option>
+                                            <option>Lạng Sơn</option>
+                                            <option>Lào Cai</option>
+                                            <option>Lâm Đồng</option>
+                                            <option>Long An</option>
+                                            <option>Nam Định</option>
+                                            <option>Nghệ An</option>
+                                            <option>Ninh Bình</option>
+                                            <option>Ninh Thuận</option>
+                                            <option>Phú Thọ</option>
+                                            <option>Phú Yên</option>
+                                            <option>Quảng Bình</option>
+                                            <option>Quảng Nam</option>
+                                            <option>Quảng Ngãi</option>
+                                            <option>Quảng Ninh</option>
+                                            <option>Quảng Trị</option>
+                                            <option>Sóc Trăng</option>
+                                            <option>Sơn La</option>
+                                            <option>Tây Ninh</option>
+                                            <option>Thái Bình</option>
+                                            <option>Thái Nguyên</option>
+                                            <option>Thanh Hóa</option>
+                                            <option>Thừa Thiên Huế</option>
+                                            <option>Tiền Giang</option>
+                                            <option>Trà Vinh</option>
+                                            <option>Tuyên Quang</option>
+                                            <option>Vĩnh Long</option>
+                                            <option>Vĩnh Phúc</option>
+                                            <option>Yên Bái</option>
+                                        </select>
+                                        <input type="text" name="address" placeholder="Địa Chỉ*">
+                                    </div>
+                                    <h3 class="section-title-4">Ghi chú về đơn hàng</h3>
+                                    <div class="single-checkout-box">
+                                        <textarea name="message" placeholder="Ví dụ: Thời Gian Nhận, Gọi Điện Trước Khi Giao hàng ..."></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Checkbox Area -->
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4">
+                        <div class="checkout-right-sidebar">
+                            <div class="our-important-note">
+                                <h2 class="section-title-3 tabs__checkbox">ĐƠN HÀNG CỦA BẠN :</h2>
+                            </div>
+                            <div class="puick-contact-area col-auto">
+                                <table class="w-100 table">
+                                    <thead>
+                                        <tr>
+                                            <th class="col-6">SẢN PHẨM</th>
+                                            <th class="text-right ">TỔNG TIỀN</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-left">Tạm tính</td>
+                                            <td class="text-right amount"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-left">Vận chuyển</td>
+                                            <td class="text-right">Miễn phí</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-left">Tổng tiền</td>
+                                            <td class="text-right amount">Tổng tiền</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <button type="button" class="btn btn-success w-80 submitform">Đặt Hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Checkout Area -->
+
+
+
+
+
+        <!-- Start Footer Area -->
+        <footer class="htc__foooter__area gray-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="footer__container clearfix">
+                        <!-- Start Single Footer Widget -->
+                        <div class="col-md-3 col-lg-3 col-sm-6">
+                            <div class="ft__widget">
+                                <div class="ft__logo">
+                                    <a href="/">
+                                        <img src="images/logo/logo.png" style="height:70px" alt="footer logo">
+                                    </a>
+                                </div>
+                                <div class="footer-address">
+                                    <ul>
+                                        <li>
+                                            <div class="address-icon">
+                                                <i class="zmdi zmdi-pin"></i>
+                                            </div>
+                                            <div class="address-text">
+                                                <p>Hà Nội, Việt Nam</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="address-icon">
+                                                <i class="zmdi zmdi-email"></i>
+                                            </div>
+                                            <div class="address-text">
+                                                <a href="#"> nhathuocquandoi@gmail.com</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="address-icon">
+                                                <i class="zmdi zmdi-phone-in-talk"></i>
+                                            </div>
+                                            <div class="address-text">
+                                                <p>034 768 9699 </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <ul class="social__icon">
+                                    <li><a href="#"><i class="zmdi zmdi-twitter"></i></a></li>
+                                    <li><a href="#"><i class="zmdi zmdi-instagram"></i></a></li>
+                                    <li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
+                                    <li><a href="#"><i class="zmdi zmdi-google-plus"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- End Single Footer Widget -->
+                        <!-- Start Single Footer Widget -->
+                        <div class="col-md-3 col-lg-2 col-sm-6 smt-30 xmt-30">
+                            <div class="ft__widget">
+                                <h2 class="ft__title">Danh Mục</h2>
+                                <ul class="footer-categories">
+                                    <li><a href="#">Bách Hóa</a></li>
+                                    <li><a href="#">Sách</a></li>
+                                    <li><a href="#">Sức Khỏe & Làm Đẹp</a></li>
+                                    <li><a href="#">Thời Trang</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Start Single Footer Widget -->
+                        <div class="col-md-3 col-lg-2 col-sm-6 smt-30 xmt-30">
+                            <div class="ft__widget">
+                                <h2 class="ft__title">Thông Tin</h2>
+                                <ul class="footer-categories">
+                                    <li><a href="contact.html">Liên Hệ</a></li>
+                                    <li><a href="about.html">Thông Tin Cửa Hàng</a></li>
+                                    <li><a href="chinh-sach-doi-tra.html">Chính Sách Đổi Trả</a></li>
+                                    <li><a href="chinh-sach-bao-mat.html">Chính Sách Bảo Mật</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Start Single Footer Widget -->
+                        <div class="col-md-3 col-lg-3 col-lg-offset-1 col-sm-6 smt-30 xmt-30">
+                            <div class="ft__widget">
+                                <h2 class="ft__title">Bản Tin</h2>
+                                <div class="newsletter__form">
+                                    <p>Đăng ký bản tin của chúng tôi .</p>
+                                    <div class="input__box">
+                                        <div id="mc_embed_signup">
+                                            <form action="#" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                                <div id="mc_embed_signup_scroll" class="htc__news__inner">
+                                                    <div class="news__input">
+                                                        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email Address" required>
+                                                    </div>
+                                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6bbb9b6f5827bd842d9640c82_05d85f18ef" tabindex="-1" value=""></div>
+                                                    <div class="clearfix subscribe__btn"><input type="submit" value="Send" name="subscribe" id="mc-embedded-subscribe" class="bst__btn btn--white__color">
+
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Footer Widget -->
+                    </div>
+                </div>
+                <!-- Start Copyright Area -->
+                <div class="htc__copyright__area">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                            <div class="copyright__inner">
+                                <div class="copyright">
+                                    <p>Copyright © 2021</p>
+                                </div>
+                                <ul class="footer__menu">
+                                    <li><a href="index.html">Trang Chủ</a></li>
+                                    <li><a href="shop.html">Cửa Hàng</a></li>
+                                    <li><a href="contact.html">Liên Hệ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Copyright Area -->
+            </div>
+        </footer>
+        <!-- End Footer Area -->
+
+
+
+
+
+    </div>
+    <!-- Body main wrapper end -->
+    <!-- Placed js at the end of the document so the pages load faster -->
+
+    <!-- jquery latest version -->
+    <script src="js/vendor/jquery-1.12.0.min.js"></script>
+    <!-- Bootstrap framework js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- All js plugins included in this file. -->
+    <script src="js/plugins.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Waypoints.min.js. -->
+    <script src="js/waypoints.min.js"></script>
+    <!-- Main js file that contents all jQuery plugins activation. -->
+    <script src="js/main.js"></script>
+    <!-- Product localStorage -->
+    <script src="js/product.js"></script>
+    <script>
+        let products = JSON.parse(decodeURI(localStorage.getItem("cart")));
+        products.map(value => {
+            $("tbody").prepend(`
+                <tr>
+                    <td class="text-left">${value.title} x${value.quantity}</td>
+                    <td class="text-right amount">${value.price}</td>
+                </tr>`)
+        });
+        $("body").on("click", ".submitform", function() {
+            let order = [];
+            products.map((value, index) => {
+                order.push(`${value.title} x${value.quantity}`)
+            });
+            let dataform = {
+                "name": $("input[name='name']").val(),
+                "phone": $("input[name='phone']").val(),
+                "city": $("select option:selected").text(),
+                "address": $("input[name='address']").val(),
+                "note": $("textarea").val(),
+                "order": JSON.stringify(order)
+            }
+            console.log(dataform);
+            $.ajax({
+                url: "https://script.google.com/macros/s/AKfycbwqvEP2v3t65PjwlXP3iQjUG8VEAcgC5vG1Tk7kXvUJVC0aFKuvbeWLzg/exec",
+                type: "POST",
+                cache: false,
+                data: dataform,
+                success: function(msg) {
+                    localStorage.setItem("cart", "%5B%5D");
+                    window.top.location.href = `cam-on.html?name=${dataform.name}&phone=${dataform.phone}`
+                },
+            });
+        });
+    </script>
+
 </body>
+
 </html>
