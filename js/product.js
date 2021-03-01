@@ -18,7 +18,7 @@ function cart() {
                     <a href="#"><img src="${value.img}" alt="product images"></a>
                 </div>
                 <div class="shp__pro__details">
-                    <h2><a href="product-details.html">${value.title}</a></h2>
+                    <h2><a href="${value.url}">${value.title}</a></h2>
                     <span class="quantity">Số Lượng: ${value.quantity}</span>
                 </div>
                 <div class="remove__btn remove-product">
@@ -51,9 +51,10 @@ $("body").on("click", ".add-cart", function() {
     let title = $(this).parents(".product").find("h2").find("a").text().trim();
     let price = $(this).parents(".product").find(".new__price").text();
     let img = $(this).parents(".product").find(".pro__thumb").find("img").attr("src");
-
+    let url = $(this).parents(".product").find(".product__action").find("a").attr("href");
+    console.log(url)
     var products = JSON.parse(decodeURI(localStorage.getItem("cart")));
-    var sanpham = JSON.parse(`{"title":"${title}","price":"${price}", "img":"${img}", "quantity": 1}`);
+    var sanpham = JSON.parse(`{"title":"${title}","price":"${price}", "img":"${img}","url":"${url}", "quantity": 1}`);
     var check = true;
     products.map(value => {
         if (value.title == sanpham.title) {
@@ -99,11 +100,12 @@ $("body").on("click", ".buy-details", function() {
     let title = $(".pro__detl__title").text().trim();
     let price = $(".pro__dtl__prize").find("li:eq(1)").text();
     let img = $(".getimg").find("img").attr("src");
-    let quantity = $(".cart-plus-minus-box").val()
+    let quantity = $(".cart-plus-minus-box").val();
+    let url = $(".ht__bradcaump__area").find("a").attr("href");
     img = img.slice(img.lastIndexOf("/"), img.length);
 
     var products = JSON.parse(decodeURI(localStorage.getItem("cart")));
-    var sanpham = JSON.parse(`{"title":"${title}","price":"${price}", "img":"images/product${img}", "quantity": "${quantity}"}`);
+    var sanpham = JSON.parse(`{"title":"${title}","price":"${price}","url":"${url}", "img":"images/product${img}", "quantity": "${quantity}"}`);
 
     var check = true;
     products.map(value => {
@@ -125,11 +127,12 @@ $("body").on("click", ".add-details", function() {
     let title = $(".pro__detl__title").text().trim();
     let price = $(".pro__dtl__prize").find("li:eq(1)").text();
     let img = $(".getimg").find("img").attr("src");
-    let quantity = $(".cart-plus-minus-box").val()
+    let quantity = $(".cart-plus-minus-box").val();
+    let url = $(".ht__bradcaump__area").find("a").attr("href");
     img = img.slice(img.lastIndexOf("/"), img.length);
 
     var products = JSON.parse(decodeURI(localStorage.getItem("cart")));
-    var sanpham = JSON.parse(`{"title":"${title}","price":"${price}", "img":"images/product${img}", "quantity": "${quantity}"}`);
+    var sanpham = JSON.parse(`{"title":"${title}","price":"${price}","url":"${url}", "img":"images/product${img}", "quantity": "${quantity}"}`);
 
     var check = true;
     products.map(value => {
