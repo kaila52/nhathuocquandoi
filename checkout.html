@@ -483,6 +483,56 @@
                     window.top.location.href = `cam-on.html?name=${dataform.name}&phone=${dataform.phone}`
                 },
             });
+            var dataform = {
+                "form_config_id": "601a0fddc1b48f001107994c",
+                "tracking_form": [{
+                    "name": "url_page",
+                    "value": "https://m.nhathuocquandoi.com"
+                }],
+                "form_data": [{
+                    "name": "name",
+                    "value": $("input[name='name']").val()
+                }, {
+                    "name": "phone",
+                    "value": $("input[name='phone']").val()
+                }, {
+                    "name": "city",
+                    "value": $("select option:selected").text()
+                }, {
+                    "name": "address",
+                    "value": $("input[name='address']").val()
+                }, {
+                    "name": "note",
+                    "value": $("textarea").val()
+                }, {
+                    "name": "order",
+                    "value": order
+                }],
+                "time_zone": 7
+            }
+
+            fetch("https://api.form.ladipage.com/sendform", {
+                    method: 'POST', // *GET, POST, PUT, DELETE, etc.
+                    mode: 'cors', // no-cors, *cors, same-origin
+                    cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
+                    credentials: 'same-origin', // include, *same-origin, omit
+                    headers: {
+                        'Content-Type': 'application/json'
+                            // 'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    redirect: 'follow', // manual, *follow, error
+                    referrerPolicy: 'strict-origin-when-cross-origin', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+                    body: JSON.stringify(dataform) // body data type must match "Content-Type" header
+                }).then(response => response.json())
+                .then(data => {
+                    if (data.message == "Success") {
+                        localStorage.setItem("cart", "%5B%5D");
+                        window.top.location.href = `cam-on.html?name=${dataform.name}&phone=${dataform.phone}`
+                    } else {
+                        alert("Vui Lòng Kiểm Tra Lại")
+                    }
+
+                });
         });
     </script>
 
